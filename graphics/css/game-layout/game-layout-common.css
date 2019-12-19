@@ -1,0 +1,200 @@
+/* Common definitions for game layouts. */
+
+body {
+    background: url('../../img/background.png') no-repeat;
+    background-size: 130%;
+    animation: slide 90s linear infinite;
+}
+
+@keyframes slide {
+  0%{ background-position: 10% 10%; }
+  10%{ background-position: 0% 20%; }
+  20%{ background-position: 5% 15%; }
+  30%{ background-position: 0% 10%; }
+  40%{ background-position: 5% 20%; }
+  50%{ background-position: 17% 6%; }
+  60%{ background-position: 8% 12%; }
+  70%{ background-position: 0% 10%; }
+  80%{ background-position: 5% 19%; }
+  90%{ background-position: 14% 9%; }
+  100%{ background-position: 10% 10%; }
+}
+
+#charity-logo-container {
+    position: absolute;
+    /*Hide charity logo for most layouts.  Let layouts show if they want.*/
+    display: none;
+    text-align: center;
+}
+
+#charity-logo {
+    width: 90%;
+}
+
+#event-logo-container {
+    position: absolute;
+    text-align: center;
+    letter-spacing: 15px;
+}
+
+#event-logo {
+    height: 160px;
+}
+
+#event-logo-name {
+    display: block;
+    font-size: 60px;
+    color: var(--logo-color);
+}
+
+#event-logo-year {
+    display: block;
+    font-size: 60px;
+    color: var(--logo-year-color);
+    text-shadow: 0 0 3px var(--logo-year-color), 0 0 3px var(--logo-year-color), 0 0 3px var(--logo-year-color), 0 0 3px var(--logo-year-color);
+}
+
+#donation-container {
+    position: absolute;
+    text-align: center;
+    background-color: var(--timer-background);
+    color: var(--timer-color);
+}
+
+#donation-event-name {
+    /*Only for 16:9 1p layout.*/
+    display: none;
+}
+
+#timer-label {
+    position: absolute;
+    text-align: center;
+    background-color: var(--timer-background);
+    color: var(--timer-color);
+    /* Hide timer label for most layouts. */
+    display: none;
+}
+
+#timer {
+    font-family: 'Calibri', monospace;
+    font-weight: bold;
+    position: absolute;
+    background-color: var(--background);
+    color: var(--timer-color);
+}
+
+#timer.timer_stopped {
+    color: var(--timer-stopped-color);
+    background-color: var(--timer-stopped-background);
+}
+
+#timer.timer_running {
+    color: var(--timer-running-color);
+    background-color: var(--timer-running-background);
+    animation-iteration-count: 3;
+    animation-name: splash;
+    animation-duration: 1s;
+}
+
+#timer.timer_paused {
+    color: var(--timer-paused-color);
+    background-color: var(--timer-paused-background);
+}
+
+#timer.timer_finished {
+    color: var(--timer-finished-color);
+    background-color: var(--timer-finished-background);
+    background: linear-gradient(100deg, #a17f1a 0%, #a17f1a 75%, #ffcc22 85%, #a17f1a 95%);
+    background-size: 250% 250%;
+    animation-iteration-count: 3;
+    animation-name: finished;
+    animation-duration: 2s;
+}
+
+#game-details {
+    position: absolute;
+    background-color: var(--game-details-background);
+    color: var(--game-details-color);
+}
+
+.game-detail-container {
+    display: block;
+    color: var(--timer-color);
+}
+
+.game-detail-label, .game-detail {
+    display: inline;
+    vertical-align: top;
+}
+
+.game-detail {
+    color: var(--game-details-color);
+}
+
+.runner-details {
+    position: absolute;
+    /*Hide runner details by default, let individual layouts control which feeds are visible.*/
+    display: none;
+}
+
+.runner-name {
+    color: var(--text-color);
+    background-color: var(--text-background);
+}
+
+.finish-time {
+    position: absolute;
+    text-align: center;
+    background-color: var(--text-color);
+    color: var(--text-background);
+    margin: 0;
+}
+
+.game-feed {
+    position: absolute;
+    background-color: var(--game-feed-chroma-key);
+    /*Hide all feeds by default, let individual layouts control which feeds are visible.*/
+    display: none;
+    border-color: var(--game-feed-border-color);
+    border-width: 2px;
+    border-style: solid;
+    /*Make sure feeds are on the bottom underneath the finish times.*/
+    z-index: -1;
+}
+
+#custom {
+    color: var(--custom-color);
+    font-size: 28px;
+    white-space: pre-wrap;
+}
+
+@keyframes splash {
+    from {
+        background-color: var(--timer-running-background);
+    }
+    50% {
+        background-color: #aaff33;
+    }
+    to {
+        background-color: var(--timer-running-background);
+    }
+}
+
+@keyframes finished {
+    from {
+        color: var(--timer-finished-color);
+        background-position: -100% 0;
+    }
+    10% {
+        color: var(--timer-finished-color);
+    }
+    25% {
+        color: rgb(240, 240, 240);
+    }
+    40% {
+        color: var(--timer-finished-color);
+    }
+    to {
+        background-position: 65% 0;
+    }
+}

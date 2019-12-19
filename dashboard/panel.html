@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<style>
+		body {
+    	background-color: #2F3A4F;
+			color: white;
+    	margin: 15px;
+		}
+	</style>
+</head>
+<body>
+	<label>Enter custom text to show on layout:</label>
+	<textarea id="customInput" rows="4" cols="60" style="width: 100%"></textarea>
+	<button id="submitButton">Update</button>
+
+	<script>
+		const customInput = document.querySelector('#customInput');
+		const submitButton = document.querySelector('#submitButton');
+
+		const customReplicant = nodecg.Replicant('custom');
+
+		customReplicant.on('change', (newVal, oldVal) => {
+			customInput.value = newVal;
+		});
+
+		submitButton.onclick = () => {
+			customReplicant.value = customInput.value;
+		}
+	</script>
+</body>
+</html>

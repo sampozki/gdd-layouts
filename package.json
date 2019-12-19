@@ -1,0 +1,36 @@
+{
+  "name": "gdd-layouts",
+  "version": "1.0.0",
+  "description": "GDD layouts.",
+  "homepage": "https://github.com/Dregu/gdd-layouts",
+  "author": "Dregu",
+  "dependencies": {},
+  "nodecg": {
+    "compatibleRange": "^1.0.0",
+    "dependencies": [
+      "speedcontrol/nodecg-speedcontrol:^2.0.0"
+    ],
+    "dashboardPanels": [
+      {
+        "name": "panel",
+        "title": "Custom text",
+        "width": 3,
+        "file": "panel.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "nextup.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "game.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "license": "AGPL-3.0"
+}

@@ -1,0 +1,125 @@
+#charity-logo-container {
+    display: none;
+    width: 495px;
+    height: 120px;
+    right: 0;
+    bottom: 150px;
+}
+
+#event-logo-container {
+    width: 430px;
+    right: 20px;
+    bottom: 10px;
+    letter-spacing: 20px;
+    line-height: 60px;
+}
+
+#event-logo {
+    float: left;
+    height: 160px;
+    margin-right: 20px;
+}
+
+#event-logo-name, #event-logo-year {
+    font-size: 90px;
+    line-height: 90px;
+}
+
+#donation-container {
+    display: none;
+    width: 495px;
+    height: 126px;
+    line-height: 126px;
+    padding: 10px 0;
+    bottom: 0;
+    right: 0;
+    font-size: 100px;
+}
+
+#timer-label {
+    display: none;
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+    top: 123px;
+    right: 350px;
+    font-size: 60px;
+}
+
+#timer {
+    width: 445px;
+    height: 110px;
+    line-height: 110px;
+    top: 210px;
+    right: 0px;
+    padding-left: 25px;
+    font-size: 90px;
+    color: var(--timer-color-alt);
+    background-color: var(--timer-background-alt);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#game-details {
+    top: 0;
+    right: 0;
+    width: 495px;
+    height: 1230px;
+    background-color: var(--text-background-alt-transparent);
+    padding-top: 15px;
+    z-index: -1;
+}
+
+.game-detail-container {
+    display: inline-block;
+    font-size: 30px;
+    padding-left: 25px;
+}
+
+.game-detail-label {
+    color: var(--timer-color);
+}
+
+.game-detail {
+    color: var(--text-color-alt);
+    width: 300px;
+}
+
+#game-name {
+    width: 450px;
+    font-size: 100px;
+    text-align: left;
+    color: var(--timer-color);
+    margin: 0 20px;
+    /*background-color: var(--timer-background);*/
+}
+
+#runner-details1 {
+    display: inline-block;
+    top: 340px;
+    left: 1399px;
+}
+
+#runner-name1 {
+    font-size: 46px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px 0 55px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#game-feed1 {
+    display: block;
+    width: 1380px;
+    height: 1035px;
+    top: 20px;
+    left: 15px;
+}
+
+#custom {
+    position: absolute;
+    right: 20px;
+    top: 730px;
+    width: 445px;
+}

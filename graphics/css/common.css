@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Chosence;
+    src: url('../fonts/Chosence_Regular.otf');
+}
+
+/* Common definitions for all layouts. */
+body {
+    font-family: "Chosence", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+
+    /* Colour definitions across layouts. */
+    --text-color: rgba(0, 200, 220, 1);
+    --text-background: white;
+    --text-color-alt: gold;
+    --text-background-alt: rgba(0, 200, 220, 1);
+    --text-background-alt-transparent: rgba(0, 200, 220, 0.3);
+    --game-details-color: gold;
+    --game-details-background: rgba(0, 200, 220, 1);
+    --timer-color: white;
+    --timer-background: rgba(0, 200, 220, 1);
+    --timer-color-alt: rgba(0, 200, 220, 1);
+    --timer-background-alt: white;
+    --logo-color: white;
+    --logo-year-color: rgba(0, 200, 220, 1);
+    --custom-color: #eeeefe;
+    --game-feed-border-color: white;
+    --game-feed-chroma-key: #00ff00;
+
+    --timer-stopped-color: rgba(0, 200, 220, 1);
+    --timer-stopped-background: white;
+    --timer-running-color: #3ace3a;
+    --timer-running-background: white;
+    --timer-paused-color: #666;
+    --timer-paused-background: #ccc;
+    --timer-finished-color: rgb(255,215,0);
+    --timer-finished-background: #a17f1a;
+}
