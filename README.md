@@ -1,6 +1,6 @@
 # gdd-layouts
 
-This is a [NodeCG](http://github.com/nodecg/nodecg) graphics bundle.  It is intended to be used with Speedcontrol, as well as our extra Speedcontrol addon bundles for some extra core functionality.
+This is a [NodeCG](http://github.com/nodecg/nodecg) graphics bundle. It is intended to be used with Speedcontrol.
 
 ## Setup
 
