@@ -5,5 +5,5 @@ This is a [NodeCG](http://github.com/nodecg/nodecg) graphics bundle. It is inten
 ## Setup
 
 1. `nodecg install speedcontrol/nodecg-speedcontrol`
-2. `nodecg install Dregu/nodecg-countdown-lowerthird`
+2. `nodecg install Dregu/nodecg-countdown-lowerthird` (optional, but countdowns and lowerthirds are useful)
 3. `nodecg install Dregu/gdd-layout`
