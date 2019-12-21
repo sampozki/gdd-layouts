@@ -24,8 +24,9 @@ body {
     --timer-background: rgba(0, 200, 220, 1);
     --timer-color-alt: rgba(0, 200, 220, 1);
     --timer-background-alt: white;
-    --logo-color: white;
-    --logo-year-color: rgba(0, 200, 220, 1);
+    --logo-color: rgba(0, 200, 220, 1);
+    --logo-year-color: rgb(255,215,0);
+    --logo-background: rgba(255, 255, 255, 1);
     --custom-color: #eeeefe;
     --game-feed-border-color: white;
     --game-feed-chroma-key: #00ff00;

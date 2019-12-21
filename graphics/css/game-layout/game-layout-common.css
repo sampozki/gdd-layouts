@@ -4,6 +4,10 @@ body {
     background: url('../../img/background.png') no-repeat;
     background-size: 130%;
     animation: slide 90s linear infinite;
+    width: 1920px;
+    height: 1080px;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
 }
 
 @keyframes slide {
@@ -27,34 +31,41 @@ body {
     text-align: center;
 }
 
-#charity-logo {
-    width: 90%;
-}
-
 #event-logo-container {
     position: absolute;
+    z-index: 9999;
     text-align: center;
     letter-spacing: 15px;
+    transform: rotate(-20deg);
+    bottom: 0;
+    right: 0;
+    background: var(--logo-background);
+    padding: 8px 20px 100px 200px;
+    margin: 0 -50px -100px 0;
+    outline: 10px solid rgba(255, 255, 255, 0.3);
 }
 
 #event-logo {
+    display: none;
     height: 160px;
 }
 
 #event-logo-name {
-    display: block;
+    display: inline-block;
     font-size: 60px;
     color: var(--logo-color);
+    text-shadow: 0 0 3px var(--logo-color), 0 0 3px var(--logo-color), 0 0 3px var(--logo-color), 0 0 3px var(--logo-color);
 }
 
 #event-logo-year {
-    display: block;
+    display: inline-block;
     font-size: 60px;
     color: var(--logo-year-color);
     text-shadow: 0 0 3px var(--logo-year-color), 0 0 3px var(--logo-year-color), 0 0 3px var(--logo-year-color), 0 0 3px var(--logo-year-color);
 }
 
 #donation-container {
+    display: none;
     position: absolute;
     text-align: center;
     background-color: var(--timer-background);
@@ -62,7 +73,6 @@ body {
 }
 
 #donation-event-name {
-    /*Only for 16:9 1p layout.*/
     display: none;
 }
 
