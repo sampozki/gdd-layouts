@@ -297,12 +297,12 @@ body {
 }
 
 #custom {
+    float: left;
+    display: inline-block;
     color: var(--custom-color);
     font-size: 28px;
     white-space: pre-wrap;
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    padding: 0 40px;
     width: var(--sidebar-width);
+    margin-left: 20px;
+    height: 180px;
 }
