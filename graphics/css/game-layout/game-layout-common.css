@@ -24,13 +24,6 @@ body {
   100%{ background-position: 10% 10%; }
 }
 
-#charity-logo-container {
-    position: absolute;
-    /*Hide charity logo for most layouts.  Let layouts show if they want.*/
-    display: none;
-    text-align: center;
-}
-
 #event-logo-container {
     position: absolute;
     z-index: 9999;
@@ -70,19 +63,6 @@ body {
     text-align: center;
     background-color: var(--timer-background);
     color: var(--timer-color);
-}
-
-#donation-event-name {
-    display: none;
-}
-
-#timer-label {
-    position: absolute;
-    text-align: center;
-    background-color: var(--timer-background);
-    color: var(--timer-color);
-    /* Hide timer label for most layouts. */
-    display: none;
 }
 
 #timer {

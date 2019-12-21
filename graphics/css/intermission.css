@@ -19,58 +19,44 @@ body {
 
 .sidebar {
     position: absolute;
-    left: 0;
-    width: var(--sidebar-width);
-    height: 1080px;
+    width: 1920px;
+    height: 200px;
+    bottom: 0;
     font-size: 48px;
     background-color: var(--text-background-alt-transparent);
 }
 
 #event-logo-container {
     position: absolute;
-    /*background-color: var(--text-color);*/
+    z-index: 9999;
     text-align: center;
     letter-spacing: 15px;
-    width: var(--sidebar-width);
-    height: 120px;
-    line-height: 150px;
-    margin-left: 8px;
+    transform: rotate(-20deg);
+    bottom: 0;
+    right: 0;
+    background: var(--logo-background);
+    padding: 8px 20px 100px 230px;
+    margin: 0 -50px -105px 0;
+    outline: 20px solid rgba(255, 255, 255, 0.3);
 }
 
 #event-logo {
-    height: 300px;
-    margin: 0 auto;
-    display: block;
-    position: absolute;
-    top: 750px;
-    left: 130px;
+    display: none;
+    height: 160px;
 }
 
 #event-logo-name {
     display: inline-block;
-    font-size: 120px;
+    font-size: 60px;
     color: var(--logo-color);
     text-shadow: 0 0 3px var(--logo-color), 0 0 3px var(--logo-color), 0 0 3px var(--logo-color), 0 0 3px var(--logo-color);
 }
 
 #event-logo-year {
     display: inline-block;
-    font-size: 120px;
+    font-size: 60px;
     color: var(--logo-year-color);
     text-shadow: 0 0 3px var(--logo-year-color), 0 0 3px var(--logo-year-color), 0 0 3px var(--logo-year-color), 0 0 3px var(--logo-year-color);
-}
-
-#charity-logo-container {
-    display: none;
-    position: absolute;
-    width: var(--sidebar-width);
-    text-align: center;
-    padding: 20px;
-    bottom: 144px;
-}
-
-#charity-logo {
-    width: 80%;
 }
 
 #donation-total {
@@ -85,40 +71,20 @@ body {
     text-align: center;
 }
 
-.currently-playing {
-    display: none;
-    position: absolute;
-    padding: 20px;
-    font-size: 24px;
-    bottom: 0;
-    left: var(--sidebar-width);
-}
-
-.music-credits {
-    display: none;
-    position: absolute;
-    padding: 20px;
-    font-size: 36px;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-}
-
-.playlist-link {
-    font-family: monospace;
-    font-size: 24px;
-}
-
 .schedule {
     position: absolute;
-    top: 152px;
-    left: 42px;
+    top: 20px;
+    left: 20px;
 }
 
-.coming-up-title
-{
-    padding-left: 20px;
-    width: 470px;
+.coming-up-wrapper, .on-deck-wrapper {
+    display: inline-block;
+    float: left;
+}
+
+.coming-up-title {
+    padding: 0 20px;
+    max-width: var(--sidebar-width);
     height: 60px;
     line-height: 60px;
     font-size: 48px;
@@ -127,10 +93,9 @@ body {
 }
 
 .coming-up-info {
-    padding-left: 20px;
-    padding-top: 4px;
+    padding: 4px 20px;
     min-height: 100px;
-    width: 470px;
+    width: auto;
     background: var(--text-color);
     white-space: nowrap;
 }
@@ -140,21 +105,25 @@ body {
 }
 
 .on-deck-wrapper {
+    margin-left: 20px;
     background: white;
-    margin-top: 30px;
+    display: inline-block;
+    float: left;
 }
 
 .on-deck-title {
+    height: 60px;
+    line-height: 60px;
     color: var(--text-color);
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 .on-deck-info {
-    margin-bottom: 10px;
+    float: left;
     background: var(--text-color);
-    padding-left: 20px;
+    padding: 4px 20px;
     min-height: 100px;
-    width: 470px;
+    width: auto;
     white-space: nowrap;
     overflow: hidden;
 }
