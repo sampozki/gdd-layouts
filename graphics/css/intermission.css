@@ -303,6 +303,6 @@ body {
     font-size: 28px;
     white-space: pre-wrap;
     width: var(--sidebar-width);
-    margin-left: 20px;
-    height: 180px;
+    margin: 20px 0 0 20px;
+    height: 200px;
 }
