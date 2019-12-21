@@ -50,6 +50,7 @@ body {
     display: inline-block;
     font-size: 120px;
     color: var(--logo-color);
+    text-shadow: 0 0 3px var(--logo-color), 0 0 3px var(--logo-color), 0 0 3px var(--logo-color), 0 0 3px var(--logo-color);
 }
 
 #event-logo-year {

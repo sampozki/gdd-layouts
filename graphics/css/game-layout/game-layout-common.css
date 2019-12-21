@@ -40,9 +40,9 @@ body {
     bottom: 0;
     right: 0;
     background: var(--logo-background);
-    padding: 8px 20px 100px 200px;
-    margin: 0 -50px -100px 0;
-    outline: 10px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 20px 100px 230px;
+    margin: 0 -50px -105px 0;
+    outline: 20px solid rgba(255, 255, 255, 0.3);
 }
 
 #event-logo {
