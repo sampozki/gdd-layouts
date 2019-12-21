@@ -15,7 +15,7 @@ body {
     /* Colour definitions across layouts. */
     --text-color: rgba(0, 200, 220, 1);
     --text-background: white;
-    --text-color-alt: gold;
+    --text-color-alt: orange;
     --text-background-alt: rgba(0, 200, 220, 1);
     --text-background-alt-transparent: rgba(0, 200, 220, 0.3);
     --game-details-color: gold;
