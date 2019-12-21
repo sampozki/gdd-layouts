@@ -72,9 +72,12 @@ body {
 }
 
 .schedule {
+    display: block;
     position: absolute;
     top: 20px;
     left: 20px;
+    height: 160px;
+    overflow: hidden;
 }
 
 .coming-up-wrapper, .on-deck-wrapper {
@@ -138,171 +141,14 @@ body {
     font-size: 30px;
 }
 
-/* INCENTIVES */
-
-.incentives {
-    position: absolute;
-    top: 152px;
-    left: 42px;
-    display: none;
-}
-
-.incentives-title
-{
-    padding-left: 20px;
-    width: 470px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 48px;
-    color: var(--text-color);
-    background: white;
-}
-
-.incentive-wrapper {
-    background: white;
-    width: 470px;
-}
-
-.incentive {
-    margin-bottom: 10px;
-    background: var(--text-color);
-    padding-left: 20px;
-    height: 170px;
-    width: 470px;
-    padding-top: 10px;
-}
-
-.incentive-name {
-    font-size: 30px;
-}
-
-.incentive-progress-full{
-    width: 300px;
-    height: 44px;
-    position: relative; /* TODO: yikers */
-    background: white;
-}
-
-.incentive-footer {
-    position: absolute;
-    height: 44px;
-    width: 440px;
-    margin-top: 10px;
-}
-
-.incentive-progress1, .incentive-progress2, .incentive-progress3 {
-    width: 50px;
-    height: 44px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.incentive-progress-text1, .incentive-progress-text2, .incentive-progress-text3
-{
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 30px;
-    height: 44px;
-    line-height: 44px;
-    width: 140px;
-    text-align: center;
-}
-
-/* BID WAR */
-
-.bid-wars {
-    position: absolute;
-    top: 152px;
-    left: 42px;
-    display: none;
-}
-
-.bid-wars-title
-{
-    padding-left: 20px;
-    width: 470px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 48px;
-    color: var(--text-color);
-    background: white;
-}
-
-.bid-war-name {
-    font-size: 30px;
-}
-
-.bid-wars-wrapper {
-    background: var(--text-color);
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    width: 470px;
-}
-
-.bid {
-    background: var(--text-color);
-    height: 44px;
-    width: 440px;
-    margin-top: 10px;
-}
-
-.bid-wrapper {
-    position: relative;
-}
-
-.bid-name {
-    font-size: 30px;
-    position: absolute;
-    height: 44px;
-    line-height: 44px;
-    padding-left: 10px;
-    color: var(--text-color);
-}
-
-.bid-progress-full{
-    width: 300px;
-    height: 44px;
-    position: relative; /* TODO: yikers */
-    background: white;
-}
-
-.bid-footer {
-    position: absolute;
-    height: 44px;
-    width: 440px;
-    left: 0;
-}
-
-.bid-progress1, .bid-progress2, .bid-progress3 {
-    width: 50px;
-    height: 44px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.bid-progress-text1, .bid-progress-text2, .bid-progress-text3
-{
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 30px;
-    height: 44px;
-    line-height: 44px;
-    width: 140px;
-    text-align: center;
-}
-
 #custom {
     float: left;
     display: inline-block;
     color: var(--custom-color);
     font-size: 28px;
     white-space: pre-wrap;
-    width: var(--sidebar-width);
-    margin: 20px 0 0 20px;
+    width: 400px;
+    padding: 20px 0 0 20px;
+    margin-top: -20px;
     height: 200px;
 }
