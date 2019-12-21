@@ -249,6 +249,12 @@ $(() => {
             $(".on-deck-name" + j).hide();
             $(".on-deck-runner" + j).hide();
         }
+
+        if (i == 0) {
+            $(".on-deck-wrapper").hide();
+        } else {
+            $(".on-deck-wrapper").show();
+        }
     }
 
     function refreshNextBidsData(currentBids) {
