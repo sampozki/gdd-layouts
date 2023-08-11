@@ -6,7 +6,7 @@ body {
 
 .wrapper {
     font-family: "Chosence", sans-serif;
-    color: white;
+    color: var(--text-color-dark);
     width: 1920px;
     height: 1080px;
     overflow: hidden;

@@ -13,28 +13,29 @@ body {
     position: absolute;
 
     /* Colour definitions across layouts. */
-    --text-color: rgba(0, 200, 220, 1);
-    --text-background: white;
+    --text-color-dark: #343434;
+    --text-color: rgba(90, 173, 179, 1);
+    --text-background: #343434;
     --text-color-alt: orange;
-    --text-background-alt: rgba(0, 200, 220, 1);
-    --text-background-alt-transparent: rgba(0, 200, 220, 0.3);
+    --text-background-alt: rgba(90, 173, 179, 1);
+    --text-background-alt-transparent: rgba(90, 173, 179, 0.3);
     --game-details-color: orange;
-    --game-details-background: rgba(0, 200, 220, 1);
-    --timer-color: white;
-    --timer-background: rgba(0, 200, 220, 1);
-    --timer-color-alt: rgba(0, 200, 220, 1);
+    --game-details-background: rgba(90, 173, 179, 1);
+    --timer-color: #343434;
+    --timer-background: rgba(90, 173, 179, 1);
+    --timer-color-alt: rgba(90, 173, 179, 1);
     --timer-background-alt: white;
-    --logo-color: rgba(0, 200, 220, 1);
+    --logo-color: rgba(90, 173, 179, 1);
     --logo-year-color: orange;
     --logo-background: rgba(255, 255, 255, 1);
     --custom-color: white;
-    --game-feed-border-color: white;
+    --game-feed-border-color: #343434;
     --game-feed-chroma-key: #00ff00;
 
-    --timer-stopped-color: rgba(0, 200, 220, 1);
-    --timer-stopped-background: white;
+    --timer-stopped-color: rgba(90, 173, 179, 1);
+    --timer-stopped-background: #343434;
     --timer-running-color: #3ace3a;
-    --timer-running-background: white;
+    --timer-running-background: #343434;
     --timer-paused-color: #666;
     --timer-paused-background: #ccc;
     --timer-finished-color: rgb(255,215,0);
